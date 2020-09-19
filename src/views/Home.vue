@@ -5,7 +5,6 @@
     data-spy="scroll"
     data-target="#navbar"
     data-offset="0"
-    @click="test_method"
   >
     <a id="scroll-top-button" class="p-5 text-center" href="#main">
       <svg
@@ -1396,18 +1395,22 @@ import { db } from "../db";
 export default {
   data() {
     return {
+      stack: [],
       Nodejs: {},
       Raspberry: {},
     };
   },
   firestore: {
+    stack: db.collection("stack"),
     Nodejs: db.collection("stack").doc("Node.js"),
     Raspberry: db.collection("stack").doc("Raspberry"),
   },
   methods: {
     test_method() {
-      console.log(this.Nodejs);
-      console.log(this.Raspberry);
+      console.log(this.stack);
+      // this.stack.forEach((stack) => {
+      //   console.log(stack.id);
+      // });
     },
   },
 };

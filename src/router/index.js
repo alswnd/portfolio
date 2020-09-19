@@ -6,6 +6,7 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 import { firestorePlugin } from "vuefire";
 
 import Home from "../views/Home.vue";
+import Admin from "../views/Admin.vue";
 
 Vue.use(VueRouter);
 Vue.use(BootstrapVue);
@@ -17,6 +18,11 @@ const routes = [
 		path: "/",
 		name: "Home",
 		component: Home,
+	},
+	{
+		path: "/admin",
+		name: "Admin",
+		component: Admin,
 	},
 	// {
 	//   path: '/about',
