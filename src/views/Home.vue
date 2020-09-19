@@ -1396,15 +1396,18 @@ import { db } from "../db";
 export default {
   data() {
     return {
-      stack: {},
+      Nodejs: {},
+      Raspberry: {},
     };
   },
   firestore: {
-    stack: db.collection("portfolio").doc("stack"),
+    Nodejs: db.collection("stack").doc("Node.js"),
+    Raspberry: db.collection("stack").doc("Raspberry"),
   },
   methods: {
     test_method() {
-      console.log(this.stack.c);
+      console.log(this.Nodejs);
+      console.log(this.Raspberry);
     },
   },
 };
