@@ -1,18 +1,1402 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div
+    class="h-100 text-white bg-dark px-3"
+    data-spy="scroll"
+    data-target="#navbar"
+    data-offset="0"
+  >
+    <a id="scroll-top-button" class="p-5 text-center" href="#main">
+      <svg
+        width="2em"
+        height="2em"
+        viewBox="0 0 16 16"
+        class="bi bi-arrow-up-circle-fill"
+        fill="lightgray"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-10.646.354a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 6.207V11a.5.5 0 0 1-1 0V6.207L5.354 8.354z"
+        />
+      </svg>
+      <br />
+    </a>
+    <header class="d-flex w-100 justify-content-end">
+      <nav
+        id="navbar"
+        class="navbar navbar-dark bg-dark position-fixed w-100"
+        style="z-index: 99; justify-content: flex-end; top: 0;"
+      >
+        <!-- <a class="navbar-brand" href="#main-part">Minjung Kim</a> -->
+        <ul class="nav justify-content-end font-weight-lighter">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#main">Main</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#about">About</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link text-white" href="#language">Skill</a>
+          </li>-->
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#stack">Stack</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#closing">Closing</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Cover -->
+      <section
+        id="main"
+        class="d-flex flex-column px-3 text-right font-noto font-weight-lighter typewriter"
+      >
+        <p>안녕하세요,</p>
+        <p>배움이 빠른 개발자</p>
+        <h1>
+          <span>김민중</span>입니다.
+        </h1>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="sort-center pt-5">
+        <div class="h1 pt-4 pb-3 w-100">About</div>
+
+        <div class="d-flex flex-column">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/storage-af5e9.appspot.com/o/profile.jpeg?alt=media&token=80ef141c-76a7-4ee9-9c0d-ee619dc2c33b"
+            class="mb-1"
+            alt="Profile image"
+            width="180px"
+          />
+          <p class="font-size-20 font-weight-lighter" style="width: 150px;">
+            Minjung
+            <strong>Kim</strong>
+          </p>
+        </div>
+
+        <p class="margin-0 font-weight-lighter font-weight-light text-warning">+82 10 2560 2772</p>
+        <p class="margin-0 font-weight-lighter font-weight-light">
+          <a
+            class="text-warning"
+            href="mailto:alswnd0427@gmail.com"
+            target="_blank"
+          >alswnd0427@gmail.com</a>
+        </p>
+        <p class="margin-0 font-weight-lighter font-weight-light">
+          <a class="text-warning" href="https://github.com/alswnd" target="_blank">github.com/alswnd</a>
+        </p>
+
+        <!-- <div
+          id="infos"
+          class="w-100 mt-5 mb-5 pt-5 pb-5 text-right font-size-20"
+        >
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt fugiat
+          dicta nesciunt libero, vel corrupti eum architecto id quis tempore
+          velit explicabo quam consequatur. Voluptatem odit tempore quae
+          provident est.
+        </div>-->
+
+        <div class="h4 mt-5 font-weight-lighter">school</div>
+        <table class="table text-white font-weight-lighter border-secondary">
+          <thead>
+            <td colspan="6"></td>
+          </thead>
+          <tbody>
+            <tr>
+              <td>문일고등학교</td>
+              <td colspan="4">서울시 금천구</td>
+              <td class="text-right">2009. 02. ~ 2012. 02.</td>
+            </tr>
+
+            <tr>
+              <td>단국대학교</td>
+              <td>경기도 용인시</td>
+              <td>학사</td>
+              <td>소프트웨어학과</td>
+              <td>3.06 / 4.5</td>
+              <td class="text-right">2013. 02. ~ 2020. 08.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="h4 mt-5 font-weight-lighter">experience</div>
+        <table class="table text-white font-weight-lighter border-secondary">
+          <thead>
+            <td colspan="5"></td>
+          </thead>
+          <tbody>
+            <tr>
+              <td>인턴</td>
+              <td>Oracle Korea</td>
+              <td>Sales Consultant</td>
+              <td>오라클 모바일 클라우드를 활용한 챗봇 개발</td>
+              <td class="text-right">2018. 01. ~ 2018. 02.</td>
+            </tr>
+
+            <tr>
+              <td>정규</td>
+              <td>팩트블록</td>
+              <td>IT</td>
+              <td>플랫폼 개발, 언론사이트 개발</td>
+              <td class="text-right">2018. 03. ~ 2019. 05.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="h4 mt-5 font-weight-lighter">activities</div>
+        <table class="table text-white font-weight-lighter border-secondary">
+          <thead>
+            <td colspan="5"></td>
+          </thead>
+          <tbody>
+            <tr>
+              <td>대외활동</td>
+              <td>
+                <strong>SSAFY</strong>(삼성 청년 SW Academy) 4기
+              </td>
+              <td>진행 중</td>
+              <td class="text-right">2020. 07. ~</td>
+            </tr>
+
+            <tr>
+              <td>대회수상</td>
+              <td>
+                K-ICT 스마트 디바이스톤
+                <strong>최우수상</strong>
+              </td>
+              <td>건설현장에서 근로자 안전을 위한 스마트 산업 안전벨트 개발</td>
+              <td class="text-right">2016. 08. ~ 2016. 08.</td>
+            </tr>
+
+            <tr>
+              <td>대회수상</td>
+              <td>
+                단국대학교 종합설계 경진대회
+                <strong>은상</strong>
+              </td>
+              <td>스마트 산업 안전벨트 고도화</td>
+              <td class="text-right">2016. 12. ~ 2016. 12.</td>
+            </tr>
+
+            <tr>
+              <td>교내동아리</td>
+              <td>학술동아리 운영</td>
+              <td>동아리 운영 및 회계 관리, 그룹 스터디 진행 및 관리, 공모전 참가</td>
+              <td class="text-right">2017. 01. ~ 2017. 12.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Stack -->
+      <section id="stack" class="sort-center pt-5">
+        <div class="h1 pt-4 w-100">Stack</div>
+
+        <div class="h2 font-weight-light mt-5 mb-0">Web</div>
+        <p class="pb-2">
+          <span
+            class="badge text-danger font-weight-light border border-danger border-danger"
+          >Angular</span>
+          <span
+            class="badge text-primary font-weight-light border border-primary border-primary"
+          >Typescript</span>
+          <span
+            class="badge text-warning font-weight-light border border-warning border-warning"
+          >Javascript</span>
+          <span class="badge text-light font-weight-light border border-light border-light">Node.js</span>
+          <span class="badge text-info font-weight-light border border-info border-info">C++</span>
+        </p>
+
+        <div class="h4 d-inline font-weight-lighter">HTML / CSS</div>
+        <span>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+        </span>
+        <div class="font-weight-lighter mt-1 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          dolorem accusantium autem et tenetur ab veritatis repellat quaerat,
+          ipsa sed quas excepturi quis aperiam, expedita ipsam eius nihil rerum
+          neque!
+        </div>
+
+        <div class="h4 d-inline font-weight-lighter">Bootstrap</div>
+        <span>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+        </span>
+        <div class="font-weight-lighter mt-1 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          dolorem accusantium autem et tenetur ab veritatis repellat quaerat,
+          ipsa sed quas excepturi quis aperiam, expedita ipsam eius nihil rerum
+          neque!
+        </div>
+
+        <div class="h4 d-inline font-weight-lighter">Vue.js</div>
+        <span>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+        </span>
+        <div class="font-weight-lighter mt-1 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          dolorem accusantium autem et tenetur ab veritatis repellat quaerat,
+          ipsa sed quas excepturi quis aperiam, expedita ipsam eius nihil rerum
+          neque!
+        </div>
+
+        <div class="h4 d-inline font-weight-lighter">React.js</div>
+        <span>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+        </span>
+        <div class="font-weight-lighter mt-1 mb-5">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde fuga,
+          qui placeat voluptatum laboriosam, magnam ullam voluptate eaque,
+          facilis ipsa quis officiis minima similique delectus quasi provident
+          nam tempora eligendi.
+        </div>
+
+        <div class="h4 d-inline font-weight-lighter">Node.js</div>
+        <span>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                   10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                   10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                   10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                   10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                   10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+        </span>
+        <div class="font-weight-lighter mt-1 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          dolorem accusantium autem et tenetur ab veritatis repellat quaerat,
+          ipsa sed quas excepturi quis aperiam, expedita ipsam eius nihil rerum
+          neque!
+        </div>
+
+        <div class="h4 d-inline font-weight-lighter">MySQL</div>
+        <span>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                           10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                           10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                           10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                           10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                           10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+        </span>
+        <div class="font-weight-lighter mt-1 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          dolorem accusantium autem et tenetur ab veritatis repellat quaerat,
+          ipsa sed quas excepturi quis aperiam, expedita ipsam eius nihil rerum
+          neque!
+        </div>
+
+        <div class="h4 d-inline font-weight-lighter">MongoDB</div>
+        <span>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+        </span>
+        <div class="font-weight-lighter mt-1 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          dolorem accusantium autem et tenetur ab veritatis repellat quaerat,
+          ipsa sed quas excepturi quis aperiam, expedita ipsam eius nihil rerum
+          neque!
+        </div>
+
+        <div class="h4 d-inline font-weight-lighter">AWS</div>
+        <span>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+        </span>
+        <div class="font-weight-lighter mt-1 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          dolorem accusantium autem et tenetur ab veritatis repellat quaerat,
+          ipsa sed quas excepturi quis aperiam, expedita ipsam eius nihil rerum
+          neque!
+        </div>
+
+        <div class="h4 d-inline font-weight-lighter">Nginx</div>
+        <span>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+        </span>
+        <div class="font-weight-lighter mt-1 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          dolorem accusantium autem et tenetur ab veritatis repellat quaerat,
+          ipsa sed quas excepturi quis aperiam, expedita ipsam eius nihil rerum
+          neque!
+        </div>
+
+        <div class="h4 d-inline font-weight-lighter">Jenkins</div>
+        <span>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                     10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+        </span>
+        <div class="font-weight-lighter mt-1 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          dolorem accusantium autem et tenetur ab veritatis repellat quaerat,
+          ipsa sed quas excepturi quis aperiam, expedita ipsam eius nihil rerum
+          neque!
+        </div>
+
+        <!-- Embedded -->
+        <div class="h2 font-weight-light mt-5 mb-0">Embedded</div>
+        <p class="pb-2">
+          <span class="badge border border-danger font-weight-light text-danger">ARM</span>
+          <span class="badge border border-primary font-weight-light text-primary">FreeRTOS</span>
+          <span class="badge border border-warning font-weight-light text-warning">Debugger</span>
+          <span class="badge border border-light font-weight-light text-light">Linux</span>
+          <!-- <span class="badge bg-info">C++</span> -->
+        </p>
+
+        <div class="h4 d-inline font-weight-lighter">ARM</div>
+        <span>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+        </span>
+        <div class="font-weight-lighter mt-1 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          dolorem accusantium autem et tenetur ab veritatis repellat quaerat,
+          ipsa sed quas excepturi quis aperiam, expedita ipsam eius nihil rerum
+          neque!
+        </div>
+
+        <div class="h4 d-inline font-weight-lighter">Raspberry pi</div>
+        <span>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+        </span>
+        <div class="font-weight-lighter mt-1 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          dolorem accusantium autem et tenetur ab veritatis repellat quaerat,
+          ipsa sed quas excepturi quis aperiam, expedita ipsam eius nihil rerum
+          neque!
+        </div>
+
+        <div class="h4 d-inline font-weight-lighter">NUCLEO-F103RB</div>
+        <span>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+        </span>
+        <div class="font-weight-lighter mt-1 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          dolorem accusantium autem et tenetur ab veritatis repellat quaerat,
+          ipsa sed quas excepturi quis aperiam, expedita ipsam eius nihil rerum
+          neque!
+        </div>
+
+        <div class="h4 d-inline font-weight-lighter">FreeRTOS</div>
+        <span>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+        </span>
+        <div class="font-weight-lighter mt-1 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          dolorem accusantium autem et tenetur ab veritatis repellat quaerat,
+          ipsa sed quas excepturi quis aperiam, expedita ipsam eius nihil rerum
+          neque!
+        </div>
+
+        <div class="h4 d-inline font-weight-lighter">회로도 이해</div>
+        <span>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+        </span>
+        <div class="font-weight-lighter mt-1 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          dolorem accusantium autem et tenetur ab veritatis repellat quaerat,
+          ipsa sed quas excepturi quis aperiam, expedita ipsam eius nihil rerum
+          neque!
+        </div>
+
+        <div class="h4 d-inline font-weight-lighter">기본 계측</div>
+        <span>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+        </span>
+        <div class="font-weight-lighter mt-1 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          dolorem accusantium autem et tenetur ab veritatis repellat quaerat,
+          ipsa sed quas excepturi quis aperiam, expedita ipsam eius nihil rerum
+          neque!
+        </div>
+
+        <div class="h4 d-inline font-weight-lighter">Debugger</div>
+        <span>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+        </span>
+        <div class="font-weight-lighter mt-1 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          dolorem accusantium autem et tenetur ab veritatis repellat quaerat,
+          ipsa sed quas excepturi quis aperiam, expedita ipsam eius nihil rerum
+          neque!
+        </div>
+
+        <div class="h4 d-inline font-weight-lighter">Linux Kernel</div>
+        <span>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+        </span>
+        <div class="font-weight-lighter mt-1 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          dolorem accusantium autem et tenetur ab veritatis repellat quaerat,
+          ipsa sed quas excepturi quis aperiam, expedita ipsam eius nihil rerum
+          neque!
+        </div>
+
+        <div class="h4 d-inline font-weight-lighter">Linux Device Driver</div>
+        <span>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+        </span>
+        <div class="font-weight-lighter mt-1 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          dolorem accusantium autem et tenetur ab veritatis repellat quaerat,
+          ipsa sed quas excepturi quis aperiam, expedita ipsam eius nihil rerum
+          neque!
+        </div>
+
+        <div class="h4 d-inline font-weight-lighter">Qt</div>
+        <span>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+        </span>
+        <div class="font-weight-lighter mt-1 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          dolorem accusantium autem et tenetur ab veritatis repellat quaerat,
+          ipsa sed quas excepturi quis aperiam, expedita ipsam eius nihil rerum
+          neque!
+        </div>
+
+        <div class="h4 d-inline font-weight-lighter">Connectivity</div>
+        <span>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+        </span>
+        <div class="font-weight-lighter mt-1 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          dolorem accusantium autem et tenetur ab veritatis repellat quaerat,
+          ipsa sed quas excepturi quis aperiam, expedita ipsam eius nihil rerum
+          neque!
+        </div>
+
+        <div class="h4 d-inline font-weight-lighter">Security</div>
+        <span>
+          <svg fill="#efce4a" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+          <svg fill="gray" width="10px" viewBox="0 0 53.867 53.867">
+            <polygon
+              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                             10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+            />
+          </svg>
+        </span>
+        <div class="font-weight-lighter mt-1 mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          dolorem accusantium autem et tenetur ab veritatis repellat quaerat,
+          ipsa sed quas excepturi quis aperiam, expedita ipsam eius nihil rerum
+          neque!
+        </div>
+      </section>
+
+      <section id="portfolio" class="sort-center pt-5">
+        <div class="h1 pt-4 pb-3 w-100">Portfolio</div>
+        <div class="d-flex flex-wrap">
+          <div class="card mr-3 mb-3 bg-card">
+            <div
+              class="card-img-wrapper d-flex"
+              style="
+                background-image: url('https://firebasestorage.googleapis.com/v0/b/storage-af5e9.appspot.com/o/bench-in-a-park-and-snowy-weather-picjumbo-com.jpg?alt=media&token=64c8f065-e149-4bb8-b25b-02794a0fec7d');
+                background-position: center;
+                background-size: cover;
+              "
+            ></div>
+
+            <div class="card-body font-weight-lighter">
+              <h5 class="card-title font-weight-light">Weather Forecast</h5>
+              <p class="card-text">
+                Geolocation을 통해 사용자 위치의 현재 날씨와 주간 날씨 예보를
+                보여줍니다.
+                <br />
+                <br />또한, Kakao Map API를 통해 사용자가 지도를 클릭하면 지역 날씨
+                정보를 알려주는 페이지를 구현했습니다.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item font-weight-lighter bg-card">2020. 08. ~ 2020. 08.</li>
+              <li class="list-group-item font-weight-lighter bg-card">SSAFY</li>
+              <li class="list-group-item font-weight-lighter bg-card">
+                <span class="badge font-weight-normal border border-danger bg-danger">REST API</span>
+
+                <span class="badge font-weight-normal border border-info bg-info">HTML</span>
+                <span class="badge font-weight-normal border border-primary bg-primary">CSS</span>
+
+                <span class="badge font-weight-normal border border-warning bg-warning">Javascript</span>
+              </li>
+            </ul>
+            <div class="card-body text-right">
+              <a
+                href="https://github.com/alswnd/weather"
+                target="_blank"
+                class="card-link text-warning"
+              >Details</a>
+            </div>
+          </div>
+
+          <div class="card mr-3 mb-3 bg-card">
+            <div
+              class="card-img-wrapper d-flex"
+              style="
+                background-image: url('https://www.ssafy.com/swp/images/sns_img.png');
+                background-position: center;
+                background-size: cover;
+              "
+            ></div>
+
+            <div class="card-body font-weight-lighter">
+              <h5 class="card-title font-weight-light">SSAFY PJT</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Ratione vitae tempora aliquid eum fugiat ipsum iusto ex
+                repellendus magnam. Ab corrupti alias dolore optio perspiciatis
+                eum doloremque quam odio excepturi
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item font-weight-lighter bg-card">2020. 00. ~ 2020. 00.</li>
+              <li class="list-group-item font-weight-lighter bg-card">SSAFY</li>
+              <li class="list-group-item font-weight-lighter bg-card">
+                <span class="badge font-weight-normal border border-danger bg-danger">Skill</span>
+
+                <span class="badge font-weight-normal border border-info bg-info">Skill</span>
+                <span class="badge font-weight-normal border border-success bg-success">Skill</span>
+
+                <span class="badge font-weight-normal border border-warning bg-warning">Skill</span>
+
+                <span class="badge font-weight-normal border border-primary bg-primary">Skill</span>
+                <span class="badge font-weight-normal text-dark border border-light bg-light">Skill</span>
+              </li>
+            </ul>
+            <div class="card-body text-right">
+              <a
+                href="https://github.com/alswnd"
+                target="_blank"
+                class="card-link text-warning"
+              >Details</a>
+            </div>
+          </div>
+
+          <div class="card mr-3 mb-3 bg-card">
+            <div
+              class="card-img-wrapper d-flex"
+              style="
+                background-image: url('https://www.ssafy.com/swp/images/sns_img.png');
+                background-position: center;
+                background-size: cover;
+              "
+            ></div>
+
+            <div class="card-body font-weight-lighter">
+              <h5 class="card-title font-weight-light">SSAFY PJT</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Ratione vitae tempora aliquid eum fugiat ipsum iusto ex
+                repellendus magnam. Ab corrupti alias dolore optio perspiciatis
+                eum doloremque quam odio excepturi
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item font-weight-lighter bg-card">2020. 00. ~ 2020. 00.</li>
+              <li class="list-group-item font-weight-lighter bg-card">SSAFY</li>
+              <li class="list-group-item font-weight-lighter bg-card">
+                <span class="badge font-weight-normal border border-danger bg-danger">Skill</span>
+
+                <span class="badge font-weight-normal border border-info bg-info">Skill</span>
+                <span class="badge font-weight-normal border border-success bg-success">Skill</span>
+
+                <span class="badge font-weight-normal border border-warning bg-warning">Skill</span>
+
+                <span class="badge font-weight-normal border border-primary bg-primary">Skill</span>
+                <span class="badge font-weight-normal text-dark border border-light bg-light">Skill</span>
+              </li>
+            </ul>
+            <div class="card-body text-right">
+              <a
+                href="https://github.com/alswnd"
+                target="_blank"
+                class="card-link text-warning"
+              >Details</a>
+            </div>
+          </div>
+
+          <div class="card mr-3 mb-3 bg-card">
+            <div class="card-img-wrapper d-flex" style="background-color: #e32124;">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                clip-rule="evenodd"
+                fill-rule="evenodd"
+                image-rendering="optimizeQuality"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                viewBox="-14.148 -8.625 122.616 51.75"
+              >
+                <g fill-rule="nonzero">
+                  <path
+                    d="M82.17 13.8c.07 0 .14 0 .18-.07.01-.03.02-.06.02-.09 0-.06-.03-.11-.08-.14-.05-.02-.1-.02-.21-.02h-.05v.31h.14zm-.09-.49c.15 0 .22 0 .28.03.2.06.22.24.22.3 0 .01 0 .05-.01.09-.01.04-.03.12-.14.19-.02.01-.02.01-.05.02l.25.46h-.24l-.22-.42h-.14v.42h-.22v-1.09zm.09 1.54c.54 0 .97-.44.97-.97 0-.54-.43-.97-.97-.97-.53 0-.96.43-.96.97 0 .53.43.97.96.97zm-.76-.97c0-.42.34-.77.76-.77.43 0 .77.35.77.77 0 .41-.35.76-.77.76-.41 0-.76-.35-.76-.76zm-6.74 6.17c-1.28 0-2.35-.86-2.68-2.03h7.08l.98-1.52h-8.07c.32-1.17 1.41-2.04 2.68-2.04h4.88l.97-1.52h-5.96c-2.39 0-4.32 1.93-4.32 4.31s1.93 4.31 4.32 4.31h5.12l.97-1.52h-5.98zm-20.29 1.52c-2.38 0-4.31-1.93-4.31-4.31s1.93-4.31 4.31-4.31h5.96l-.98 1.52h-4.88c-1.54 0-2.79 1.25-2.79 2.79s1.25 2.79 2.79 2.79h5.98l-.98 1.52h-5.12zm-31.5-1.52c1.54 0 2.8-1.25 2.8-2.79s-1.25-2.79-2.8-2.79h-4.79c-1.54 0-2.79 1.25-2.79 2.79s1.25 2.79 2.79 2.79zm-4.9 1.52c-2.39 0-4.32-1.93-4.32-4.31s1.93-4.31 4.32-4.31h5.01c2.38 0 4.31 1.93 4.31 4.31s-1.93 4.31-4.31 4.31zm17.46-2.79c1.62 0 2.92-1.31 2.92-2.92 0-1.61-1.3-2.92-2.92-2.92h-7.26v8.63h1.66v-7.11h5.49c.76 0 1.39.63 1.39 1.4 0 .77-.63 1.39-1.39 1.39h-4.68l4.94 4.32H38l-3.33-2.79h.75zm27.44 1.27v-7.1h-1.65v7.8c0 .22.08.42.24.58.16.15.38.25.61.25h7.57l.98-1.52h-7.74zm-20.3-1.52h4.43l-2.34-3.77-4.3 6.82h-1.95l5.22-8.18c.23-.33.61-.53 1.03-.53.4 0 .78.19 1.01.51l5.24 8.2h-1.96l-.92-1.52h-4.48l-.98-1.52z"
+                    fill="#fefefe"
+                  />
+                </g>
+              </svg>
+            </div>
+
+            <div class="card-body font-weight-lighter">
+              <h5 class="card-title font-weight-light">Chatbot</h5>
+              <p class="card-text">
+                오라클 모바일 클라우드 내의 챗봇 솔루션을 활용하여, 데모 챗봇을
+                개발하고 개발 가이드 문서를 작성했습니다.
+                <br />
+                <br />챗봇 기계학습, Custom Component(Node.js) 구현, 대화 흐름
+                제어(YAML), 외래어 오탈자 정정 기능을 구현했습니다.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item font-weight-lighter bg-card">2018. 01. ~ 2018. 02.</li>
+              <li class="list-group-item font-weight-lighter bg-card">Oracle Korea</li>
+              <li class="list-group-item font-weight-lighter bg-card">
+                <span class="badge font-weight-normal border border-danger bg-danger">Oracle</span>
+
+                <span class="badge font-weight-normal border border-info bg-info">Chatbot</span>
+                <span class="badge font-weight-normal border border-success bg-success">Node.js</span>
+
+                <span class="badge font-weight-normal border border-warning bg-warning">YAML</span>
+
+                <span class="badge font-weight-normal border border-primary bg-primary">MySQL</span>
+                <span class="badge font-weight-normal text-dark border border-light bg-light">Cloud</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card mr-3 mb-3 bg-card">
+            <div class="card-img-wrapper bg-white d-flex align-items-center">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/storage-af5e9.appspot.com/o/factblock.jpeg?alt=media&token=7e53cb93-b01b-4e91-9fdd-4b78610b56c1"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body font-weight-lighter">
+              <h5 class="card-title font-weight-light">FACTBLOCK</h5>
+              <p class="card-text">
+                블록체인 프로젝트의 정보를 평가, 공유하는 플랫폼입니다.
+                <br />
+                <br />Angular 프레임워크를 사용해 Front-end를 구성하고, Firebase를
+                사용해 Cloud Function, Database, Storage를 구성했습니다.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item font-weight-lighter bg-card">2018. 03. ~ 2018. 05.</li>
+              <li class="list-group-item font-weight-lighter bg-card">팩트블록</li>
+              <li class="list-group-item font-weight-lighter bg-card">
+                <span class="badge font-weight-normal border border-danger bg-danger">Angular</span>
+                <span class="badge font-weight-normal border border-warning bg-warning">Firebase</span>
+                <span class="badge font-weight-normal border border-primary bg-primary">Typescript</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card mr-3 mb-3 bg-card">
+            <div class="card-img-wrapper bg-light d-flex align-items-center justify-content-center">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/storage-af5e9.appspot.com/o/TheBlockPost_Logo_1200-640x138.png?alt=media&token=89bd5a58-8238-43b6-85a2-7c2f837a9247"
+                class="card-img-top"
+                alt="..."
+                style="width: 70%;"
+              />
+            </div>
+            <div class="card-body font-weight-lighter">
+              <h5 class="card-title font-weight-light">The BlockPost</h5>
+              <p class="card-text">
+                암호화폐, 블록체인을 전문으로 다루는 언론 사이트입니다.
+                <br />
+                <br />워드프레스를 사용하여 뉴스 메뉴를 구현하고, 페이스북의 Page
+                기능을 오마주하여 커뮤니티 메뉴를 만들었습니다. 커뮤니티 메뉴는
+                Angular, PHP, MySQL을 활용하여 구현했습니다.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item font-weight-lighter bg-card">2018. 06. ~ 2019. 05.</li>
+              <li class="list-group-item font-weight-lighter bg-card">팩트블록</li>
+              <li class="list-group-item font-weight-lighter bg-card">
+                <span class="badge font-weight-normal border border-danger bg-danger">Angular</span>
+                <span class="badge font-weight-normal border border-success bg-success">PHP</span>
+                <span class="badge font-weight-normal border border-primary bg-primary">MySQL</span>
+                <span class="badge font-weight-normal border border-info bg-info">Wordpress</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="closing" class="sort-center pt-5">
+        <div class="h1 pt-4 pb-3 w-100">Closing</div>
+
+        <p
+          class="font-noto"
+          style="font-size: 25px; margin-bottom: 0; font-weight: bold;"
+        >마중지봉 [麻中之蓬]</p>
+        <p class="font-weight-lighter" style="margin-bottom: 50px;">
+          삼밭에 나는 쑥이라는 뜻으로,구부러진 쑥도 삼밭에 나면 저절로 꼿꼿하게
+          자라듯이 좋은 환경에 있거나 좋은 벗과 사귀면 자연히 주위의 감화를
+          받아서 선인이 됨을 비유해 이르는 말입니다.
+        </p>
+
+        <p
+          class="font-weight-lighter font-noto text-right"
+          style="font-size: 20px; margin-bottom: 0;"
+        >팀원들에게 좋은 영향을 받고,</p>
+        <p
+          class="font-weight-lighter font-noto text-right"
+          style="font-size: 20px; margin-bottom: 0;"
+        >팀원들에게 좋은 영향을 주며</p>
+
+        <p
+          class="font-weight-lighter font-noto text-right"
+          style="font-size: 20px; margin-bottom: 80px;"
+        >발전을 멈추지 않는 개발자가 되겠습니다.</p>
+
+        <p
+          class="font-weight-lighter font-noto text-right"
+          style="font-size: 20px; margin-bottom: 0px;"
+        >감사합니다.</p>
+        <p
+          class="font-weight-lighter font-noto text-right"
+          style="font-size: 20px; margin-bottom: 0px;"
+        >- 김민중</p>
+
+        <p class="font-weight-lighter text-right" style="font-size: 15px; margin-bottom: 130px;">
+          <a
+            class="text-warning"
+            href="mailto:alswnd0427@gmail.com"
+            target="_blank"
+            style="font-weight: bolder;"
+          >
+            alswnd0427@gmail.com
+            <br />
+          </a>
+          <a class="text-warning" style="font-weight: bolder;">+82 10 2560 2772</a>
+        </p>
+      </section>
+    </main>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+export default {};
 </script>
