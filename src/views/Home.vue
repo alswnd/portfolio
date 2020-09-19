@@ -1,9 +1,11 @@
 <template>
   <div
+    id="wrapper"
     class="h-100 text-white bg-dark px-3"
     data-spy="scroll"
     data-target="#navbar"
     data-offset="0"
+    @click="test_method"
   >
     <a id="scroll-top-button" class="p-5 text-center" href="#main">
       <svg
@@ -27,7 +29,6 @@
         class="navbar navbar-dark bg-dark position-fixed w-100"
         style="z-index: 99; justify-content: flex-end; top: 0;"
       >
-        <!-- <a class="navbar-brand" href="#main-part">Minjung Kim</a> -->
         <ul class="nav justify-content-end font-weight-lighter">
           <li class="nav-item">
             <a class="nav-link text-white" href="#main">Main</a>
@@ -93,20 +94,12 @@
           <a class="text-warning" href="https://github.com/alswnd" target="_blank">github.com/alswnd</a>
         </p>
 
-        <!-- <div
-          id="infos"
-          class="w-100 mt-5 mb-5 pt-5 pb-5 text-right font-size-20"
-        >
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt fugiat
-          dicta nesciunt libero, vel corrupti eum architecto id quis tempore
-          velit explicabo quam consequatur. Voluptatem odit tempore quae
-          provident est.
-        </div>-->
-
         <div class="h4 mt-5 font-weight-lighter">school</div>
         <table class="table text-white font-weight-lighter border-secondary">
           <thead>
-            <td colspan="6"></td>
+            <tr>
+              <td colspan="6"></td>
+            </tr>
           </thead>
           <tbody>
             <tr>
@@ -1398,5 +1391,242 @@
 </template>
 
 <script>
-export default {};
+import { db } from "../db";
+
+export default {
+  data() {
+    return {
+      stack: {},
+    };
+  },
+  firestore: {
+    stack: db.collection("portfolio").doc("stack"),
+  },
+  methods: {
+    test_method() {
+      console.log(this.stack.c);
+    },
+  },
+};
 </script>
+
+    <style>
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+#wrapper {
+  position: relative;
+  height: auto;
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+th {
+  font-weight: light !important;
+}
+
+#scroll-top-button {
+  position: fixed;
+  z-index: 99;
+  bottom: 3rem;
+  right: 3rem;
+  padding: 0 !important;
+}
+
+#scroll-top-button svg {
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#scroll-top-button svg:hover {
+  fill: white;
+  transform: scale(1.2);
+}
+
+.nav-item a {
+  transition: font-weight 0.3s;
+}
+
+.nav-item .active,
+.nav-item a:hover {
+  font-weight: 300;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.font-noto {
+  font-family: "Noto Serif KR", serif;
+}
+
+#main {
+  height: 100vh;
+  justify-content: center;
+}
+
+#main > p,
+#main > h1 {
+  font-weight: 100;
+  font-size: 30px;
+}
+
+#main > h1 > span {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.table {
+  margin-top: -15px;
+}
+
+.table td {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#stack .badge {
+  transition: 0.3s;
+  cursor: default;
+}
+
+#stack .badge.border-primary:hover {
+  color: white !important;
+  background-color: #0d6efd !important;
+}
+#stack .badge.border-secondary:hover {
+  color: white !important;
+  background-color: #6c757d !important;
+}
+#stack .badge.border-success:hover {
+  color: white !important;
+  background-color: #28a745 !important;
+}
+#stack .badge.border-danger:hover {
+  color: white !important;
+  background-color: #dc3545 !important;
+}
+#stack .badge.border-warning:hover {
+  color: white !important;
+  background-color: #ffc107 !important;
+}
+#stack .badge.border-info:hover {
+  color: white !important;
+  background-color: #17a2b8 !important;
+}
+#stack .badge.border-light:hover {
+  color: black !important;
+  background-color: #f8f9fa !important;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.w-95 {
+  width: 90% !important;
+}
+
+.card {
+  width: 343px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.bg-card {
+  background-color: #495057;
+}
+
+.card-img-wrapper {
+  min-height: 200px;
+  max-height: 200px;
+
+  overflow: hidden;
+}
+
+.card-img-wrapper img {
+  width: 100%;
+  height: initial;
+}
+
+.card .badge {
+  transition: 0.3s;
+}
+
+.card .badge:hover {
+  color: white !important;
+  cursor: default;
+}
+
+.card .badge.bg-primary:hover {
+  color: #0d6efd !important;
+  /* border-color: #0d6efd !important; */
+  background-color: #495057 !important;
+}
+.card .badge.bg-secondary:hover {
+  color: #6c757d !important;
+  /* border-color: #6c757d !important; */
+  background-color: #495057 !important;
+}
+.card .badge.bg-success:hover {
+  color: #28a745 !important;
+  /* border-color: #28a745 !important; */
+  background-color: #495057 !important;
+}
+.card .badge.bg-danger:hover {
+  color: #dc3545 !important;
+  /* border-color: #dc3545 !important; */
+  background-color: #495057 !important;
+}
+.card .badge.bg-warning:hover {
+  color: #ffc107 !important;
+  /* border-color: #ffc107 !important; */
+  background-color: #495057 !important;
+}
+.card .badge.bg-info:hover {
+  color: #17a2b8 !important;
+  /* border-color: #17a2b8 !important; */
+  background-color: #495057 !important;
+}
+.card .badge.bg-light:hover {
+  color: #f8f9fa !important;
+  /* border-color: #f8f9fa !important; */
+  background-color: #495057 !important;
+}
+
+.card-link:hover,
+#about p a:hover {
+  text-decoration: underline;
+}
+
+/*  */
+.typewriter h1 {
+  border-right: 0.1em solid #ffc107;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+/* */
+</style>
